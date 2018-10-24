@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtregistronombres"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@+id/txtregistrocontrasena1"
+        android:layout_alignEnd="@+id/txtregistrocontrasena1"
+        android:hint="Nombres"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtregistroapellidos"
+        android:layout_below="@+id/txtregistronombres"
+        android:layout_alignRight="@+id/txtregistronombres"
+        android:layout_alignEnd="@+id/txtregistronombres"
+        android:layout_alignLeft="@+id/txtregistronombres"
+        android:layout_alignStart="@+id/txtregistronombres"
+        android:hint="Apellidos"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtregistroemail"
+        android:layout_below="@+id/txtregistroapellidos"
+        android:layout_alignLeft="@+id/txtregistroapellidos"
+        android:layout_alignStart="@+id/txtregistroapellidos"
+        android:layout_alignRight="@+id/txtregistroapellidos"
+        android:layout_alignEnd="@+id/txtregistroapellidos"
+        android:hint="E-mail"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtregistrociudad"
+        android:layout_below="@+id/txtregistroemail"
+        android:layout_alignLeft="@+id/txtregistroemail"
+        android:layout_alignStart="@+id/txtregistroemail"
+        android:layout_alignRight="@+id/txtregistroapellidos"
+        android:layout_alignEnd="@+id/txtregistroapellidos"
+        android:hint="Ciudad"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtregistrotelefono"
+        android:layout_below="@+id/txtregistrociudad"
+        android:layout_alignLeft="@+id/txtregistrociudad"
+        android:layout_alignStart="@+id/txtregistrociudad"
+        android:layout_alignRight="@+id/txtregistrociudad"
+        android:layout_alignEnd="@+id/txtregistrociudad"
+        android:hint="Teléfono"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtregistrodireccion"
+        android:layout_below="@+id/txtregistrotelefono"
+        android:layout_alignLeft="@+id/txtregistroemail"
+        android:layout_alignStart="@+id/txtregistroemail"
+        android:layout_alignRight="@+id/txtregistrocontrasena1"
+        android:layout_alignEnd="@+id/txtregistrocontrasena1"
+        android:hint="Dirección"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtregistrocontrasena1"
+        android:layout_below="@+id/txtregistrodireccion"
+        android:layout_alignLeft="@+id/txtregistrocontrasena2"
+        android:layout_alignStart="@+id/txtregistrocontrasena2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:hint="Contraseña"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txtregistrocontrasena2"
+        android:layout_below="@+id/txtregistrocontrasena1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Repita Contraseña"
+        android:gravity="center" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Registrarse"
+        android:id="@+id/btnregistroenviar"
+        android:background="@drawable/boton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kevinherrera.alfayomegalogisticsu" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Modelo.Login"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Modelo.Menu" />
+        <activity android:name=".Modelo.Registro" />
+        <activity android:name=".Modelo.CambiarContrasena" />
+        <activity android:name=".Modelo.SolicituddeServicio" />
+        <activity android:name=".Modelo.MapsActivity" />
+        <activity android:name=".Modelo.CaracteristicasServicio" />
+        <activity android:name=".Modelo.ServiciosSolicitados" />
+        <activity android:name=".Modelo.ServiciosSolicitados1" />
+        <activity android:name=".Modelo.HistorialServicios" />
+        <activity android:name=".Modelo.HistorialServicios1" />
+        <activity android:name=".Modelo.ServiciosEspeciales" />
+        <activity android:name=".Modelo.ServiciosEspeciales1" />
+        <activity android:name=".Modelo.ServiciosEspecificos" />
+        <activity android:name=".Modelo.DatosMensajero" />
+        <activity
+            android:name=".Modelo.navigation"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

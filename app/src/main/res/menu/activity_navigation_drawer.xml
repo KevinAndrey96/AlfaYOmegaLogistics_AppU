@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single" android:title="Servicios">
+        <item android:id="@+id/lssolicitudservicio"
+            android:title="Solicitud De Servicio" />
+        <item android:id="@+id/lsserviciossolicitados"
+            android:title="Servicios Solicitados" />
+        <item android:id="@+id/lsserviciosespeciales"
+            android:title="Servicios Especiales Aceptados" />
+        <item android:id="@+id/lshistorialservicios"
+            android:title="Historial De Servicios" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item android:id="@+id/lscambiarclave"
+                android:title="Cambiar Contraseña" />
+            <item android:id="@+id/lscerrarsesion"
+                android:title="Cerrar Sesion" />
+        </menu>
+    </item>
+
+</menu>

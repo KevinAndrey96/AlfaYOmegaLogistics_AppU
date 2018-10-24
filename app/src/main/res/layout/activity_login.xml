@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Login"
+    android:background="@drawable/fondo">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtloginusuario"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:hint="E-Mail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnloginRegistro"
+        android:layout_alignEnd="@+id/btnloginRegistro" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Contraseña"
+        android:id="@+id/txtlogincontrasena"
+        android:layout_below="@+id/txtloginusuario"
+        android:layout_marginTop="39dp"
+        android:layout_alignRight="@+id/txtloginusuario"
+        android:layout_alignEnd="@+id/txtloginusuario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Registrarse"
+        android:id="@+id/btnloginRegistro"
+        android:background="@drawable/boton"
+        android:layout_above="@+id/btnolvidocontra"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Iniciar Sesión"
+        android:id="@+id/btnlogininiciarsesion"
+        android:background="@drawable/boton"
+        android:layout_above="@+id/btnolvidocontra"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Has Olvidado Tu Contraseña?"
+        android:id="@+id/btnolvidocontra"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

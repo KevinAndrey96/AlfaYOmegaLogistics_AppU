@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Solicitud de servicio"
+        android:id="@+id/btnsolicitudsercvicio"
+        android:background="@drawable/boton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Servicios Solicitados"
+        android:id="@+id/btnserviciossolicitados"
+        android:background="@drawable/boton"
+        android:layout_below="@+id/btnsolicitudsercvicio"
+        android:layout_alignLeft="@+id/btnsolicitudsercvicio"
+        android:layout_alignStart="@+id/btnsolicitudsercvicio"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Historial de servicios"
+        android:id="@+id/btnhistorialservicios"
+        android:background="@drawable/boton"
+        android:layout_below="@+id/btnserviciosespeciales"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Cerrar Sesión"
+        android:id="@+id/btnmenucerrarsesion"
+        android:background="@drawable/boton"
+        android:layout_below="@+id/btncambiarcontra"
+        android:layout_alignLeft="@+id/btncambiarcontra"
+        android:layout_alignStart="@+id/btncambiarcontra"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Cambiar Contraseña"
+        android:id="@+id/btncambiarcontra"
+        android:background="@drawable/boton"
+        android:layout_below="@+id/btnhistorialservicios"
+        android:layout_alignLeft="@+id/btnhistorialservicios"
+        android:layout_alignStart="@+id/btnhistorialservicios"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="Servicios especiales"
+        android:id="@+id/btnserviciosespeciales"
+        android:background="@drawable/boton"
+        android:layout_below="@+id/btnserviciossolicitados"
+        android:layout_alignLeft="@+id/btnserviciossolicitados"
+        android:layout_alignStart="@+id/btnserviciossolicitados"
+        android:layout_marginTop="12dp" />
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:fillViewport="false">
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tipo de servicio: "
+        android:id="@+id/textView5"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvtipo"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="No Definido"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Distancia: "
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvkm"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Valor envío: "
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="$9000"
+        android:id="@+id/tvvalor"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9"
+        android:textSize="17dp" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Aceptar Y Continuar"
+        android:id="@+id/btnaceptarcaracteristicas"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/boton"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="Calcular Valor"
+        android:id="@+id/btncancelarcaracteristicas"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/boton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/txtalto" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdiro"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/txtdird"
+        android:layout_alignStart="@+id/txtdird"
+        android:layout_alignRight="@+id/txtespdescripcion"
+        android:layout_alignEnd="@+id/txtespdescripcion"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdird"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_alignRight="@+id/btnaceptarcaracteristicas"
+        android:layout_alignEnd="@+id/btnaceptarcaracteristicas"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dirección Origen"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dirección Destino"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/txtdiro"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtespdescripcion"
+        android:hint="Descripción (Opcional)"
+        android:gravity="center"
+        android:layout_below="@+id/txtdird"
+        android:layout_alignLeft="@+id/txtdird"
+        android:layout_alignStart="@+id/txtdird"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Su servicio será enviado a nuestros asesores para ser cotizado, por favor revise la sección servicios solicitados."
+        android:id="@+id/txtespnota"
+        android:layout_below="@+id/txtespdescripcion"
+        android:layout_alignLeft="@+id/txtespdescripcion"
+        android:layout_alignStart="@+id/txtespdescripcion"
+        android:layout_alignRight="@+id/txtespdescripcion"
+        android:layout_alignEnd="@+id/txtespdescripcion"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+    <RadioGroup
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/radioGroup"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sobre"
+                android:id="@+id/rbsobre"
+                android:checked="false"
+                android:layout_gravity="right"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caja"
+                android:id="@+id/rbcaja"
+                android:checked="false"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Especial"
+                android:id="@+id/rbespecial"
+                android:checked="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtlargo"
+        android:hint="Largo (cm)"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/tvpesop"
+        android:layout_alignRight="@+id/txtancho"
+        android:layout_alignEnd="@+id/txtancho"
+        android:layout_alignLeft="@+id/txtespnota"
+        android:layout_alignStart="@+id/txtespnota" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/txtancho"
+        android:gravity="center"
+        android:hint="Ancho (cm)"
+        android:visibility="invisible"
+        android:layout_below="@+id/txtespnota"
+        android:layout_alignLeft="@+id/txtespnota"
+        android:layout_alignStart="@+id/txtespnota"
+        android:layout_alignRight="@+id/btncancelarcaracteristicas"
+        android:layout_alignEnd="@+id/btncancelarcaracteristicas" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/txtalto"
+        android:hint="Alto (cm)"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_below="@+id/txtespnota"
+        android:layout_alignRight="@+id/txtespnota"
+        android:layout_alignEnd="@+id/txtespnota"
+        android:layout_toEndOf="@+id/txtlargo"
+        android:layout_alignLeft="@+id/btnaceptarcaracteristicas"
+        android:layout_alignStart="@+id/btnaceptarcaracteristicas" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/tvpesop"
+        android:hint="Peso (kg)"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_above="@+id/txtancho"
+        android:layout_alignRight="@+id/txtespnota"
+        android:layout_alignEnd="@+id/txtespnota"
+        android:layout_toEndOf="@+id/txtlargo"
+        android:layout_alignLeft="@+id/txtalto"
+        android:layout_alignStart="@+id/txtalto" />
+
+</RelativeLayout>
+    </ScrollView>
